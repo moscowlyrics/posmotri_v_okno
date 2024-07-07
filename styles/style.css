@@ -48,7 +48,8 @@ ol {
 
 .content {
   display: flex;
-  padding: 133px 30px;
+  position: relative;
+  padding: 133px 30px 0 30px;
   font-family: 'Oswald', 'Arial', sans-serif;
   color: #fff;
   gap: 0 30px;
@@ -57,8 +58,8 @@ ol {
 .result {
   display: flex;
   flex-direction: column;
-  gap: 10px 0;
-  align-self: flex-end;
+  gap: 5px 0;
+  padding-top: 80px;
 }
 
 .result__video-container { /* - прелоудер поверх тут */
@@ -96,8 +97,7 @@ ol {
   font-weight: normal;
 }
 
-label:has(:focus-visible) {
-  border: none;
+label:has(input[type="checkbox"]):has(:focus-visible) {
   outline: 1px solid #fff;
   outline-offset: 1px;
 }
@@ -136,6 +136,16 @@ label:has(:focus-visible) {
   margin-right: 5px;
   appearance: none;
   outline: 0;
+}
+
+.search-form__textfield:focus {
+  outline: 1px solid #fff;
+  outline-offset: 2px;
+}
+
+.search-form__textfield:active {
+  outline: 0;
+  border: 1px solid #fff;
 }
 
 .search-form__textfield::placeholder {
@@ -185,7 +195,6 @@ input[type="checkbox"]:checked + span {
   text-underline-offset: 2px;
 }
 
-
 .button:active {
   background-color: #545050;
 }
@@ -201,7 +210,7 @@ input[type="checkbox"]:checked + span {
 .content__details {
   display: flex;
   flex-direction: column;
-  gap: 20px 0;
+  gap: 18px 0;
 }
 
 .title {
