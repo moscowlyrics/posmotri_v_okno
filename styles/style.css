@@ -12,7 +12,7 @@ html {
   inline-size: 1200px;
   block-size: 100%;
   margin: 0 auto;
-  place-content: center;
+  align-content: center;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
