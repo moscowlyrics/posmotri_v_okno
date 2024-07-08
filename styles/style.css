@@ -17,6 +17,8 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+
+  border: 5px solid white;
 }
 
 h1,
@@ -53,6 +55,8 @@ ol {
   font-family: 'Oswald', 'Arial', sans-serif;
   color: #fff;
   gap: 0 30px;
+
+  border: 1px solid white;
 }
 
 .result {
